@@ -1,0 +1,58 @@
+{
+    "name": "create-deriv-app",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/deriv-com/create-deriv-app.git",
+        "directory": "cli"
+    },
+    "description": "",
+    "main": "./bin/index.js",
+    "engines": {
+        "node": ">=18.17.0"
+    },
+    "type": "module",
+    "exports": "./bin/index.js",
+    "bin": {
+        "create-deriv-app-test": "./bin/index.js"
+    },
+    "files": [
+        "bin",
+        "bin/templates/**/.gitignore",
+        "README.md",
+        "LICENSE",
+        "CHANGELOG.md",
+        "package.json"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "start": "npm run build && node ./bin/index.js",
+        "prepublish": "npm run build"
+    },
+    "keywords": [],
+    "author": "Adrienne Rio",
+    "license": "MIT",
+    "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/github": "^9.2.6",
+        "@semantic-release/npm": "^11.0.3",
+        "@semantic-release/release-notes-generator": "^12.1.0",
+        "@types/node": "^20.11.10",
+        "tiny-glob": "^0.2.9",
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "@babel/generator": "^7.23.6",
+        "@babel/parser": "^7.24.0",
+        "@babel/traverse": "^7.24.0",
+        "@clack/core": "^0.3.3",
+        "@clack/prompts": "^0.7.0",
+        "boxen": "^7.1.1",
+        "chalk": "^5.3.0",
+        "fs-extra": "^11.2.0",
+        "gradient-string": "^2.0.2"
+    }
+}
