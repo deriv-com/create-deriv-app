@@ -31,7 +31,9 @@
         "start": "npm run build && node ./bin/index.js",
         "prepublish": "npm run build"
     },
-    "keywords": [],
+    "keywords": [
+        "deriv"
+    ],
     "author": "Adrienne Rio",
     "license": "MIT",
     "devDependencies": {

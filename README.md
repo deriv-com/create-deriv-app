@@ -21,7 +21,7 @@ Then simply follow the prompts listed to select the features for the new package
 -   Precommit hooks
 -   Folder structure initialization
 
-## Future works
+## Future improvements
 
 -   Path alias initialization Supported
 -   Deriv API V2 integration

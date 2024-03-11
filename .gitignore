@@ -3,3 +3,5 @@ dist
 bin
 *.env
 *.env.local
+.env
+.env.local
