@@ -1,3 +1,5 @@
+<img width="942" alt="Screenshot 2024-03-11 at 12 59 27 PM" src="https://github.com/adrienne-deriv/create-deriv-app/assets/103016120/68dcaf04-958b-4b3b-8772-b39733cd5a9e">
+
 # create-deriv-app
 
 A CLI to bootstrap new Deriv packages and libraries, with feature selection and automatic setup for new repositories.
