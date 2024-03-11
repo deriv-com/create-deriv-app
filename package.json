@@ -6,7 +6,7 @@
         "url": "https://github.com/deriv-com/create-deriv-app.git",
         "directory": "cli"
     },
-    "description": "",
+    "description": "A CLI to bootstrap Deriv packages and libraries",
     "main": "./bin/index.js",
     "engines": {
         "node": ">=18.17.0"
