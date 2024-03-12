@@ -12,7 +12,7 @@ export async function preparePackage(packagePath: string, dependencies: LibraryD
         await asyncExec(`cd ${packagePath} && git init`);
         if (dependencies.type === 'library')
             await asyncExec(
-                `git remote add upstream git@github.com:${dependencies.organizationName}/${dependencies.repositoryName}.git`
+                `cd ${packagePath} && git remote add upstream git@github.com:${dependencies.organizationName}/${dependencies.repositoryName}.git`
             );
         s.message('Bootstrapping dependencies (this might take some time 😛)');
         await asyncExec(`cd ${packagePath} && npm install`);
@@ -20,7 +20,7 @@ export async function preparePackage(packagePath: string, dependencies: LibraryD
         await asyncExec(`cd ${packagePath} && npm run prepare`);
         if (dependencies.type === 'library') {
             s.message('Setting up development branch for pre-release');
-            await asyncExec('git checkout -b development');
+            await asyncExec(`cd ${packagePath} && git checkout -b development`);
         }
         s.stop();
     } catch (err) {
