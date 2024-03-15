@@ -10,7 +10,7 @@ module.exports = {
         { name: 'alpha', prerelease: true },
         { name: 'development', prerelease: true },
     ],
-    repositoryUrl: 'git@github.com:deriv-com/ui.git',
+    repositoryUrl: '',
 
     plugins: [
         [
