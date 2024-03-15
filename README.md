@@ -6,7 +6,7 @@ A CLI to bootstrap new Deriv packages and libraries, with feature selection and 
 
 ## Getting started
 
-To get started, install the CLI through:
+To get started, install the CLI using:
 
 ```
 npx create-deriv-app
