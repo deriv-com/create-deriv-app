@@ -16,13 +16,23 @@ To generate a build:
 npm run build
 ```
 
-## Deploying to Cloudflare Pages
+## Deploying to Cloudflare Pages (staging)
 
-In order to generate a deployment to Cloudflare Pages, ensure that the following secrets are set in the Github Actions:
+In order to generate a staging deployment to Cloudflare Pages, ensure that the following secrets are set in the Github Actions:
 
 ```bash
 CLOUDFLARE_ACCOUNT_ID=****
 CLOUDFLARE_API_TOKEN=****
+CLOUDFLARE_PROJECT_NAME=****
+```
+
+## Generating a test link preview to Cloudflare Pages
+
+In order to generate a test link deployment to Cloudflare Pages, ensure that the following secrets are set in the Github Actions:
+
+```bash
+CLOUDFLARE_ACCOUNT_ID=****
+CLOUDFLARE_TEST_LINK_TOKEN=****
 CLOUDFLARE_PROJECT_NAME=****
 ```
 

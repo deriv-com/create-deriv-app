@@ -1,5 +1,5 @@
 {
     "*.{js,jsx,ts,tsx,md,html,css,scss}": "prettier --write",
-    "*.{js,jsx,ts,tsx}": "eslint --fix --config .eslintrc.cjs --rule 'simple-import-sort/imports: 0'",
+    "*.{js,jsx,ts,tsx}": "eslint --fix --config .eslintrc.cjs",
     "*.{css,scss}": "npx stylelint --fix"
 }
